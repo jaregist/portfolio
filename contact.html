@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Favicon Assets-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Fonts/FontAwesome Icons-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+
+  <title>Register Design - Contact</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/header-logo.svg">
+      <img src="images/logo-jpg.jpg" alt="Register Design">
+    </picture>
+
+    <!--Main Navigation Menu -- hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Register Design - Home">Home</a></li>
+        <li><a href="about.html" title="Register Design - About">About</a></li>
+        <li><a href="portfolio.html" title="Register Design - Portfolio">Portfolio</a></li>
+        <li><a class="main-active" href="contact.html" title="Register Design - Contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu -- hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Register Design - Home">Register Design Group</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Register Design - Home">Home</a></li>
+        <li><a href="about.html" title="Register Design - About">About</a></li>
+        <li><a href="portfolio.html" title="Register Design - Portfolio">Portfolio</a></li>
+        <li><a href="contact.html" title="Register Design - Contact">Contact Me</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-header">
+      <h2>&lt;Like What You See?/&gt;</h2>
+      <div class="contact-icons">
+        <a href="tel:+19198880566" title="919-888-0566"><i class="fas fa-phone"></i></a>
+        <a href="mailto:joregister91@gmail.com" title="joregister91@gmail.com"><i class="fas fa-envelope-open"></i></a>
+        <a href="https://calendly.com/" target="_blank" title="Schedule an appointment with me on Calendly"><i class="far fa-calendar-plus"></i></a>
+      </div>
+    </section>
+    <section class="contact-info">
+      <h3>Let Me Design Your Next Project!</h3>
+      <p>
+        I love developing and designing beautiful websites. Want to chat about your next project? Use the links above to contact me directly or fill out the form and I will be in touch. I'm happy to answer questions, discuss ideas, or just chat about web development in general. I look forward to hearing from you!
+      </p>
+    </section>
+    <section class="contact-form">
+      <form action="#">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div>
+          <label for="phone">Phone: </label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+          <input class="submit" type="submit">
+        </div>
+      </form>
+    </section>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d806.9967210286535!2d-78.90186500358858!3d35.996187076309305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace472911499f3%3A0xa983b589a727d439!2sOne%20City%20Center!5e0!3m2!1sen!2sus!4v1619533453803!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe> 
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/logo-jpg.jpg" alt="Register Design">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/jake.register.10/" target="_blank" title="Register Design - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/jake-register/" target="_blank" title="Register Design - LinkedIn Page"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://twitter.com/_Register25" target="_blank" title="Register Design - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://github.com/jaregist" target="_blank" title="Register Design - Github Page"><img src="images/github.svg" alt="Github"></a>
+      <a href="https://www.instagram.com/_register25/?hl=en" target="_blank" title="Register Design - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+
+    <div class="footer-btns">
+      <a class="btn-contact" href="contact.html" title="Register Design - Contact">Contact</a>
+    </div>  
+  </footer>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

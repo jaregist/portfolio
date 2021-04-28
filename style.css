@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body, button {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+body h1, body h2, body a {
+  font-family: 'Merriweather', serif;
+}
+
+/***************Header Styling***********************************************/
+header {
+  background-color: #216869;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0 0 0;
+  width: 100%;
+}
+
+nav {
+  display: none;
+}
+/**************************************************************************/
+
+/***************hamburger menu*****************/
+.hamburger-menu {
+  overflow: hidden;
+  background-color: #216869;
+  position: relative;
+}
+
+.hamburger-menu #hamburger-menu-links {
+  display: none;
+}
+
+.hamburger-menu .active {
+  background-color: #216869;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.25em;
+  
+}
+
+.hamburger-menu a {
+  color: #ffffff;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  text-align: left;
+}
+
+.hamburger-menu a.icon {
+  background: #216869;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+}
+
+.hamburger-menu a:hover {
+  background-color: #49A078;
+  color: #ffffff;
+}
+/**************************************************************************/
+
+/****************Main Styling*********************************************/
+body {
+  background-color: #E3DEE2;
+}
+
+main {
+  width: 85%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0 1em 0;
+}
+
+
+.index-main {
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  background-image: url("images/business_1920w.jpg");
+  background-color: #ffffff; 
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-info {
+  width: 100%;
+  padding: 1em;
+  background-color: rgba(227, 222, 226, .75)
+}
+
+.index-info h2 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+  color: #000;
+  margin: 0;
+}
+
+.index-info p {
+  color: #000;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  width: 90%;
+}
+
+.index-btns a {
+  text-decoration: none;
+  
+}
+
+.index-btns a {
+  background-color: #DACC3E;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.25em;
+  display: block;
+  margin: 1em 1em;
+  padding: .5em 1em;
+}
+
+.about-intro div {
+  padding: 1em 0;
+}
+
+.contact-main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.contact-icons a {
+  padding: .5em;
+}
+
+.fa-phone {
+  color: green;
+}
+
+.fa-envelope-open {
+  color: blue;
+}
+
+.fa-calendar-plus {
+  color: red;
+}
+
+.contact-info h3 {
+  padding: 1em 0;
+}
+
+.contact-form {
+  padding: 1.5em 0;
+}
+
+.contact-form div {
+  padding: .5em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form label {
+  width: 25%;
+}
+
+.contact-form input {
+  padding: .5em 0;
+  width: 75%;
+}
+
+.contact-form textarea {
+  width: 100%;
+}
+
+div .submit {
+  border: none;
+  padding: 1em 0;
+  background-color: #216869;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+}
+
+div .submit:hover, div .submit:active, div .submit:focus {
+  cursor: pointer;
+  opacity: .85;
+}
+
+.map iframe {
+  border: 1px solid #216869;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 2em;
+}
+/************************************************************************/
+
+
+/***************Card Styling********************/
+.card {
+  background-color: #ffffff;
+  margin: 2em auto;
+  max-width: 85%;
+  padding: 1em;
+  box-shadow: 5px 5px 15px 5px #216869;
+}
+
+.card div {
+  margin: 1em 0 1em 0;
+}
+
+.card ul {
+  margin-left: 3em;
+}
+
+.card-content {
+  margin: 0 auto;
+  font-size: 1.25em;
+  padding-top: 1em;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-live, .btn-git {
+  display: block;
+  width: 45%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #49A078;
+  font-size: .75em;
+  color: #ffffff;
+  padding: .75em 0;
+  margin: 0 .5em;
+  border-radius: 2em;
+  border: none;
+}
+
+.btn-git-only {
+  display: block;
+  width: 85%;
+  text-align: center;
+  background-color: #49A078;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: .75em;
+  padding: .75em 0;
+  border-radius: 2em;
+  border: none;
+}
+
+.btn-live:hover, .btn-git:hover, .btn-git-only:hover {
+  opacity: .85;
+}
+
+.about-cards .card {
+  padding: 0;
+}
+
+.about-cards .card div {
+  padding: 1em;
+}
+
+.about-cards .card p {
+  padding: 1em;
+}
+/**********************************************/
+
+/*************************Tech Icon Styling*******************************/
+.tech-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.tech-icon {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 3.5em;
+  width: 65%;
+  max-width: 150px;
+  filter: drop-shadow(.9em 1em 0.5em rgba(33, 104, 105, 0.8));
+}
+
+/************************************************************************/
+
+/**********************Footer Styling*************************************/
+footer {
+  background-color: #216869;
+  text-align: center;
+  padding: 1em 1em;
+  width: 100%;
+}
+
+.social-icons {
+  padding-top: 1em;
+}
+
+.social-icons img {
+  display: inline-block;
+  width: 75px;
+  padding: 0 .75em;
+}
+
+.footer-btns {
+  display: none;
+}
+
+.btn-contact, .btn-portfolio {
+  border-radius: 2em;
+  border: none;
+}
+
+.btn-contact:hover, .btn-portfolio:hover {
+  opacity: .85;
+}
+
+.social-attribute {
+  color: #ffffff;
+  padding-top: 1em;
+  font-size: .75em;
+}
+
+.social-attribute a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: 400px) {
+    .hamburger-menu .active {
+      font-size: 1.5em;
+      
+    }
+    
+    .hamburger-menu a.icon {
+      top: 1em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .hamburger-menu {
+      display: none;
+    }
+
+    h2 {
+      font-size: 3.5em;
+    }
+
+    .index-info p {
+      width: 50%;
+    }
+
+    .index-btns {
+      display: flex;
+      justify-content: center;
+    }
+
+    .index-btns a {
+      padding: .5em 1em;
+    }
+    
+  
+    /***************Main Nav Styling*******************************************/
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: #216869;
+    }
+    
+    nav li {
+      float: left;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    
+    nav li a {
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 1em;
+      text-decoration: none;
+    }
+
+    nav li a:hover, .main-active {
+      text-decoration: underline;
+    }
+    /**************************************************************************/
+ 
+    /******************Card-Wrapper Grid Layout Tablet************************/
+
+    .card-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5em 1em;
+    }
+
+    
+    /************************************************************************/
+
+    /*******************Tech Icons Grid Layout Tablet************************/
+    .tech-icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    /************************************************************************/
+
+    /*******************Contact Form Grid Layout Tablet************************/
+    .contact-main {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2em;
+      padding-bottom: 1em;
+    }
+    
+    .contact-main .contact-header {
+      grid-column: 1/3;
+      padding-bottom: 1em;
+    }
+
+    .contact-info {
+      width: 85%;
+    }
+
+    .map {
+      grid-column: 1/3;
+    }
+
+    .map iframe {
+      margin: 1em auto;
+      height: 75vh;
+    }
+
+    .contact-icons {
+      font-size: 3em;
+      margin: 0 auto;
+      width: 50%;
+    }
+
+
+    /************************************************************************/
+
+    /*******************About Page Grid Layout Tablet************************/
+    .about-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about-intro div {
+      padding: 0 1em;
+    }
+
+    .about-intro p {
+      font-size: 1em;
+    }
+
+
+    /************************************************************************/
+
+    /**********************Footer Styling Tablet******************************/
+    .footer-btns {
+      display: block;
+      grid-column: 5/6;
+    }
+
+    .footer-btns a {
+      text-decoration: none;
+    }
+
+    .footer-btns a {
+      text-decoration: none;
+      color: #000;
+      background-color: #DACC3E;
+      font-size: 1.25em;
+      display: block;
+      margin: 1em auto;
+    }
+
+    .btn-contact {
+      padding: .5em 1.4em;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 20%;
+    }
+
+    .social-icons {
+      width: 60%;
+    }
+
+    .footer-btns {
+      width: 20%;
+    }
+    /************************************************************************/
+  }
+
+  @media screen and (max-width: 420px) {
+    .social-icons img {
+      width: 55px;
+    }
+  }
+
+  @media screen and (min-width: 850px) {
+    .about-intro p {
+      font-size: 1.25em;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+
+    /******************Card-Wrapper Grid Layout Desktop**********************/
+    .card-wrapper {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    article.card.pleasure-island {
+      grid-column: 3/3;
+      max-width: 85%;
+      display: block;
+    }
+
+    article.card.pleasure-island .card-content {
+      grid-row: 1;
+      grid-column: 2/3;
+      margin: 0;
+    }
+    /***********************************************************************/
+
+    /******************About Page Card-Wrapper Grid Layout Desktop**********************/
+    .about-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /***********************************************************************/
+
+    /*******************Tech Icons Grid Layout Tablet************************/
+    .tech-icons {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .wordpress {
+      grid-column: 2/3;
+    }
+
+    .php {
+      grid-column: 3/4;
+    }
+    /************************************************************************/
+
+    /*******************Contact Form Grid Layout Tablet************************/
+    .contact-info {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+    /************************************************************************/
+
+    .about-intro p {
+      font-size: 1.5em;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .about-intro p {
+      font-size: 1.75em;
+    }
+  }
+}
+

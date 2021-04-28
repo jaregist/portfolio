@@ -1,0 +1,13 @@
+<svg id="header-logo-test" xmlns="http://www.w3.org/2000/svg" width="689" height="170" viewBox="0 0 689 170">
+  <rect id="Rectangle_5" data-name="Rectangle 5" width="689" height="170" fill="#216869"/>
+  <text id="Register" transform="translate(10.341 108.5)" fill="#fff" font-size="65" font-family="Merriweather"><tspan x="0" y="0">Register</tspan></text>
+  <g id="Group_22" data-name="Group 22" transform="translate(4044.341 -542)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(-3755 553)" fill="none" stroke="#fff" stroke-width="10">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="70" fill="none"/>
+    </g>
+    <text id="J" transform="translate(-3721 653)" fill="#fff" font-size="100" font-family="Merriweather"><tspan x="0" y="0">J</tspan></text>
+    <text id="R" transform="translate(-3702 676)" fill="#fff" font-size="100" font-family="Merriweather"><tspan x="0" y="0">R</tspan></text>
+  </g>
+  <text id="Design" transform="translate(451 109)" fill="#fff" font-size="65" font-family="Merriweather"><tspan x="0" y="0">Design</tspan></text>
+</svg>

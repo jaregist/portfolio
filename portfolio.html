@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Favicon Assets-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Fonts/FontAwesome Icons-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+
+  <title>Register Design - Portfolio</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width:700px)" srcset="images/header-logo.svg">
+      <img src="images/logo-jpg.jpg" alt="Register Design">
+    </picture>
+
+    <!--Main Navigation Menu -- hidden on non-mobile screen sizing-->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Register Design - Home">Home</a></li>
+        <li><a href="about.html" title="Register Design - About">About</a></li>
+        <li><a class="main-active" href="portfolio.html" title="Register Design - Portfolio">Portfolio</a></li>
+        <li><a href="contact.html" title="Register Design - Contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <!--Hamburger Navigation Menu -- hidden on non-mobile screen sizing-->
+    <div class="hamburger-menu">
+      <a href="index.html" class="active" title="Register Design - Home">Register Design Group</a>
+      <ul id="hamburger-menu-links">
+        <li><a href="index.html" title="Register Design - Home">Home</a></li>
+        <li><a href="about.html" title="Register Design - About">About</a></li>
+        <li><a href="portfolio.html" title="Register Design - Portfolio">Portfolio</a></li>
+        <li><a href="contact.html" title="Register Design - Contact">Contact Me</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h2>&lt;projects/&gt;</h2>
+
+    <!--Cards containing portfolio images, description, and links/buttons-->
+    <div class="card-wrapper">
+      <article class="card">
+        <div class="card-media">
+          <img srcset="images/xs_paramount_homes_316w.jpg 316w,
+             images/small_paramount_homes_632w.jpg 632w,
+             images/medium_paramount_homes_947w.jpg 947w"
+            sizes="(max-width: 476px) 316px,
+                   (max-width: 768px) 632px,
+                   (max-width: 992px) 947px,
+                   1263px"
+            src="images/large_paramount_homes_1263w.jpg"
+            alt="homepage for Paramount Homes website"
+          >
+        </div>
+        <div class="card-content">
+          <p class="card-description">
+            Project website that I built to practice 
+            HTML/CSS. I will continue to update and build 
+            onto this as I learn. I hope to
+            add some back-end processing interactivity
+            but, it feels “right” for now.
+          </p>
+          <div class="card-buttons">
+            <a class="btn-live" href="https://wcet3.waketech.edu/joregister/WEB210/paramount-homes/index.html" target="_blank" title="Paramount Homes Live Site">Live Site</a>
+            <a class="btn-git" href="https://github.com/jaregist/ParamountHomes" target="_blank" title="Paramount Homes Github Repo">Github</a>
+          </div>
+        </div>
+      </article>
+  
+      <article class="card">
+        <div class="card-media">
+          <img srcset="images/xs_to_do_list_316w.jpg 316w,
+             images/small_to_do_list_632w.jpg 632w,
+             images/medium_to_do_list_947w.jpg 947w"
+            sizes="(max-width: 476px) 316px,
+                   (max-width: 768px) 632px,
+                   (max-width: 992px) 947px,
+                   1263px"
+            src="images/large_to_do_list_1263w.jpg"
+            alt="homepage for a to-do list application built with Javascript"
+          >
+        </div>
+        <div class="card-content">
+          <p class="card-description">
+            This is a to-do list application that you can add and delete tasks from. It also 
+            saves your tasks locally so you can refresh or close the application without 
+            worrying about losing them.
+          </p>
+          <div class="card-buttons">
+            <a class="btn-live" href="https://wcet3.waketech.edu/joregister/WEB210/todo-list/index.html" target="_blank" title="To-Do List Live Site">Live Site</a>
+            <a class="btn-git" href="https://github.com/jaregist/todo-list" target="_blank" title="To-Do List Github Repo">Github</a>
+          </div>
+        </div>
+      </article>
+  
+      <article class="card">
+        <div class="card-media">
+          <img srcset="images/xs_pleasure_island_project_316w.jpg 316w,
+             images/small_pleasure_island_project_632w.jpg 632w,
+             images/medium_pleasure_island_project_947w.jpg 947w"
+            sizes="(max-width: 476px) 316px,
+                   (max-width: 768px) 632px,
+                   (max-width: 992px) 947px,
+                   1263px"
+            src="images/large_pleasure_island_project_1263w.jpg"
+            alt="homepage for Pleasure Island, NC Grid website"
+          >
+        </div>
+        <div class="card-content">
+          <p class="card-description">
+            This is a project that I worked on for a Mobile Design course at Wake Tech. Our task was to 
+            use CSS Grid to re-design the website for Pleasure Island, North Carolina making it more accessible.
+          </p>
+          <div class="card-buttons">
+            <a class="btn-live" href="https://wcet3.waketech.edu/joregister/WEB125/lesson10/Pleasure-Island/index.html" target="_blank" title="Pleasure Island, NC Live Site">Live Site</a>
+            <a class="btn-git" href="https://github.com/jaregist/pleasure-island" target="_blank" title="Pleasure Island, NC Github Repo">Github</a>
+          </div>
+        </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img srcset="images/xs_pleasure_island_bootstrap_316w.jpg 316w,
+              images/small_pleasure_island_bootstrap_632w.jpg 632w,
+              images/medium_pleasure_island_bootstrap_947w.jpg 947w"
+              sizes="(max-width: 476px) 316px,
+                   (max-width: 768px) 632px,
+                   (max-width: 992px) 947px,
+                   1263px"
+              src="images/large_pleasure_island_bootstrap_1263w.jpg"
+              alt="homepage for Pleasure Island, NC Bootstrap website"
+            >
+          </div>
+          <div class="card-content">
+              <p class="card-description">
+                Similar to the previously shown Pleasure Island, NC website - this is another re-design for  Pleasure Island. On this project, I used Bootstrap to implement a responsive and stylish   layout.
+              </p>
+              <div class="card-buttons">
+                <a class="btn-live" href="https://wcet3.waketech.edu/joregister/WEB125/lesson12/pleasure-island-bootstrap/index.html" target="_blank" title="Pleasure Island, NC Bootstrap  Live Site">Live Site</a>
+                <a class="btn-git" href="https://github.com/jaregist/pleasure-island-bootstrap"   target="_blank" title="Pleasure Island, NC Bootstrap Github Repo">Github</a>
+              </div>
+            </div> 
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img srcset="images/xs_animal_rescue_316w.jpg 316w,
+                images/small_animal_rescue_632w.jpg 632w,
+                images/medium_animal_rescue_947w.jpg 947w"
+                sizes="(max-width: 476px) 316px,
+                   (max-width: 768px) 632px,
+                   (max-width: 992px) 947px,
+                   1263px"
+                src="images/large_animal_rescue_1263w.jpg"
+                alt="homepage for Register Animal Rescue"
+              >
+            </div>
+            <div class="card-content">
+                <p class="card-description">
+                  This project was for a graphic design course at Wake Tech. I needed to design a grid style layout in Adobe XD and then use CSS Grid to implement the design. I chose a fictional Animal Rescue. 
+                </p>
+                <div class="card-buttons">
+                  <a class="btn-live" href="https://wcet3.waketech.edu/joregister/GRD240/lesson11/index.html" target="_blank" title="Animal Rescue Live Site">Live Site</a>
+                  <a class="btn-git" href="https://github.com/jaregist/animal-rescue" target="_blank" title="Animal Rescue Github Repo">Github</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media">
+                <img srcset="images/xs_pacific_northwest_316w.jpg 316w,
+                images/small_pacific_northwest_632w.jpg 632w,
+                images/medium_pacific_northwest_947w.jpg 947w"
+                sizes="(max-width: 576px) 316px,
+                   (max-width: 768px) 632px,
+                   (max-width: 992px) 947px,
+                   1263px"
+                src="images/large_pacific_northwest_1263w.jpg"
+                alt="homepage for pacific northwest xray"
+                >
+
+              </div>
+              <div class="card-content">
+                  <p class="card-description">
+                    This is a project that I worked on for a graphic design course at Wake Tech. My task was to update a very outdated site with a modern layout in Adobe XD. It is not currently live.
+                  </p>
+                  <div class="card-buttons">
+                    <a class="btn-git-only" href="https://github.com/jaregist/pacific-nw-xray" target="_blank" title="Pacific Northwest Xray Github Repo">Github</a>
+                  </div>
+                </div> 
+              </article>
+        </div>
+
+    <h2>&lt;technology/&gt;</h2>
+
+    <div class="tech-icons">
+      <img class="tech-icon html" src="images/HTML5_Badge.svg" alt="HTML5">
+      <img class="tech-icon css" src="images/css-3.svg" alt="CSS3">
+      <img class="tech-icon javascript" src="images/javascript.svg" alt="Javascript">
+      <img class="tech-icon adobe" src="images/adobe-xd.svg" alt="Adobe XD">
+      <img class="tech-icon wordpress" src="images/wordpress.svg" alt="Wordpress">
+      <img class="tech-icon php" src="images/php.svg" alt="PHP">
+    </div>  
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="images/logo-jpg.jpg" alt="Register Design">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/jake.register.10/" target="_blank" title="Register Design - Facebook Page"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/jake-register/" target="_blank" title="Register Design - LinkedIn Page"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://twitter.com/_Register25" target="_blank" title="Register Design - Twitter Page"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://github.com/jaregist" target="_blank" title="Register Design - Github Page"><img src="images/github.svg" alt="Github"></a>
+      <a href="https://www.instagram.com/_register25/?hl=en" target="_blank" title="Register Design - Instagram Page"><img src="images/instagram.svg" alt="Instagram"></a>
+      <div class="social-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+
+    <div class="footer-btns">
+      <a class="btn-contact" href="contact.html" title="Register Design - Contact">Contact</a>
+    </div> 
+  </footer>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>
